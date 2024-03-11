@@ -22,7 +22,7 @@ nota2 = float(input('Qual foi a 2° nota?'))
 nota3 = float(input('Qual foi a 3° nota?'))
 nota4 = float(input('Qual foi a 4° nota?'))
 media = (nota1 + nota2 + nota3 + nota4)/4
-print('A média de ' +disciplina+ f' foi de {media}')
+print(f'A média de {disciplina} foi de {media:.1f}')
 '''
 
 """Elaborar um algoritmo que solicita o nome de um produto, seu valor e
@@ -32,7 +32,7 @@ produto = input('Qual é o produto desejado?')
 quantidade = int(input(f'Qual a quantidade de {produto} você deseja?'))
 preco = float(input(f'Quanto que custa uma unidade de {produto}'))
 total = quantidade * preco
-print(f'O total a ser pago, de {produto}, é R${total}')"""
+print(f'O total a ser pago, de {produto}, é R${total:.2f}')"""
 
 """Estender o exercício 4 anterior informando que para pagamento à vista tem
 15% de desconto, calculando e exibindo este valor.
@@ -46,4 +46,4 @@ avista = input('Super oferta!! A vista possui 15% de desconto!!! Pagar à vista(
 if avista != 'Não':
     total = total - (total * 0.15)
 
-print(f'O total a ser pago, de {produto}, é R${total}')"""
+print(f'O total a ser pago, de {produto}, é R${total:.2f}')"""
