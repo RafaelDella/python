@@ -1,4 +1,5 @@
-calcular IMC
+calcular IMC (feito)
 calcular área de um triângulo
 conversão de temp (graus para fh e vice versa)
-calcular o sálario de um pj (valor hora, desconto de imposto, horas trabalhadas)
+calcular o sálario de um pj (valor hora, desconto de imposto, horas trabalhadas) (feito)
+calcular os 10% da taxa de serviço
