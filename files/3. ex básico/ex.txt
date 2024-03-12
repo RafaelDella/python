@@ -1,5 +1,5 @@
 calcular IMC (done)
+calcular o sálario de um pj (done)
+calcular os 10% da taxa de serviço (10%)
 calcular área de um triângulo
 conversão de temp (graus para fh e vice versa)
-calcular o sálario de um pj (done)
-calcular os 10% da taxa de serviço
