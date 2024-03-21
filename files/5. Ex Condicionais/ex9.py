@@ -14,32 +14,28 @@ def multiplicar_e_somar(lista):
     return resultado
 
 def segunda_verificacao():
-    return multiplicar_e_somar(cpf[:10])
+    return multiplicar_e_somar(cpf[:numero_digitos_verificacao])
 
-'''Setup'''
+'''Definindo variável global'''
 numero_digitos_verificacao = 9
 valor_multiplicacao = 10
 cpf = input("Digite o seu CPF SEM FORMATAÇÃO: ")
 primeiro_digito_verificador = int(str(cpf)[-2])
 segundo_digito_verificador = int(str(cpf)[-1])
-
 resto_segundo_digito_verificador = 0
 segunda_multiplicação = 0
 
 '''Verificar o Primiero Digito'''
 cpf_multiplicado = multiplicar_e_somar(cpf[:9])
 divisao_verificador = (cpf_multiplicado * 10)%11
-print(f"Dividido: {cpf_multiplicado}")
 
 if divisao_verificador == primeiro_digito_verificador or divisao_verificador == 10:
-    numero_digito_verificacao = 10
+    numero_digitos_verificacao = 10
     valor_multiplicacao = 11
     segunda_multiplicação = segunda_verificacao()
     resto_segundo_digito_verificador = (segunda_multiplicação * 10) % 11
-    print(resto_segundo_digito_verificador)
-    print(segundo_digito_verificador)
 else:
-    print("Fake Nattyy")
+    print("Seu CPF não é válido!")
 
 
 if resto_segundo_digito_verificador == segundo_digito_verificador or resto_segundo_digito_verificador == 10:
