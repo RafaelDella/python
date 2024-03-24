@@ -27,9 +27,9 @@ segunda_multiplicação = 0
 
 '''Verificar o Primiero Digito'''
 cpf_multiplicado = multiplicar_e_somar(cpf[:9])
-resto_divisao_verificador = (cpf_multiplicado * 10)%11
+divisao_verificador = (cpf_multiplicado * 10)%11
 
-if resto_divisao_verificador == primeiro_digito_verificador or resto_divisao_verificador == 10:
+if divisao_verificador == primeiro_digito_verificador or divisao_verificador == 10:
     quant_digitos_verificar = 10
     valor_multiplicacao = 11
     segunda_multiplicação = segunda_verificacao()
