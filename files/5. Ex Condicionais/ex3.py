@@ -5,20 +5,23 @@ um dos valores esteja fora dos parâmetros informados, mostrar uma mensagem
 informando que esta rodada não valeu. Caso contrário, informa qual jogador ganhou esta
 rodada'''
 
-regra = input("Jogador 1, você prefere Par(Par) ou Impar(Impar)? ")
+regra = input("Jogador 1, você prefere Par(Par) ou Impar(Impar)? ").lower()
 jogador1 = int(input("Digite um número de 1 - 5: "))
 jogador2 = int(input("Digite um número de 1 - 5: "))
-numero = (jogador1 + jogador2)%2
 
-if numero != 0:
-    print("Deu Impar!!!")
-    if regra == "Impar":
-        print("Jogador 1 venceuu")
+if (0 < jogador1 and jogador1 < 6) and (0 < jogador2 and jogador2 < 6):
+    numero = (jogador1 + jogador2)%2
+    if numero != 0:
+        print("Deu Impar!!!")
+        if regra == "impar":
+            print("Jogador 1 venceu!!")
+        else:
+            print("Jogador 2 venceu!!")
     else:
-        print("Jogador 2 venceuu")
+        print("Deu Par!!!")
+        if regra == "par":
+            print("Jogador 1 venceu!!")
+        else:
+            print("Jogador 2 venceu!!")
 else:
-    print("Deu Par!!!")
-    if regra == "Par":
-        print("Jogador 1 venceuu")
-    else:
-        print("Jogador 2 venceuu")
+    print("Escolha de número inválido! Renicie o jogo.")
