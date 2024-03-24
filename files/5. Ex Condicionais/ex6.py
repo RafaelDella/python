@@ -14,7 +14,5 @@ if delta < 0:
 else:
     x1 = (-1 * (b) + math.sqrt(delta))/(2*a)
     x2 = (-1 * (b) - math.sqrt(delta))/(2*a)
-    print(f"X1: {x1:.2f}")
-    print(f"X2: {x2:.2f}")
-
-
+    print(f"O valor de X1 é {x1}")
+    print(f"O valor de X2 é {x2}")
