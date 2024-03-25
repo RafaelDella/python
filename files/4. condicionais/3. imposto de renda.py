@@ -39,4 +39,3 @@ if base_deducao > faixa1:
     else:
         aliquota = 0.075
         valor_final = (faixa2 - faixa1) * aliquota
-
