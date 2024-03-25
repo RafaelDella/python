@@ -12,7 +12,6 @@ def verificar_ano(data):
         while int(data) > 12:
             print("ERROR!! A string não contem apenas números INTEIROS")
             data = int(input("Digite um mês válida: "))
-            verificar_mes == False
 
     if verificar_dia == True:
         while int(data) > 30:
@@ -36,12 +35,15 @@ ano = input("Digite um ano: ")
 ano = verificar_ano(ano)
 
 quantidade_digito_data = 2
-verificar_mes = True
 mes = input("Digite um mês: ")
+verificar_mes = True
+verificar_dia = False
 mes = verificar_ano(mes)
 
-verificar_dia = True
+
 dia = input("Digite um dia: ")
+verificar_mes = False
+verificar_dia = True
 dia = verificar_ano(dia)
 
 print("1 – Data simples. Ex.: 10/08/1990")
